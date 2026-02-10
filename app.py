@@ -14,7 +14,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 # -----------------------------
 @st.cache_data
 def generate_word():
-    prompt = "Generate exactly ONE random English word between 5 and 15 letters. Only output the word."
+    prompt = "Generate exactly ONE random English word between 5 and 15 letters. Pick a word that is a valid word and commonly used. Only output the word."
 
     response = client.responses.create(
         model="gpt-4o-mini",
