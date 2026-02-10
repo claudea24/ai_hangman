@@ -1,4 +1,4 @@
-The app is running on the cloud on:
+Link to running app: https://claudea24-ai-hangman.streamlit.app/
 
 Running locally: 
 
@@ -7,4 +7,5 @@ using pip:
 2. run the app: `streamlit run app.py`
 
 using uv:
-1. 
+1. add the dependencies in `pyproject.toml` or `uv add streamlit openai python-dotenv`
+2. run the app: `uv run streamlit run app.py`
